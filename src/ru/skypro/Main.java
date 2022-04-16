@@ -1,5 +1,7 @@
 package ru.skypro;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class Main {
 
         int[] weights = new int[]{0, 1, 2, 3};
         for (int i = 0; i < weights.length - 1; i++) {
-            System.out.print(weights[i] + " ,");
+            System.out.println(weights[i] + " ,");
         }
         System.out.print(weights[weights.length - 1]);
         System.out.println();
@@ -38,6 +40,18 @@ public class Main {
                 System.out.print(weightsFractionalBack[i]);
             } else {
                 System.out.print(weightsFractionalBack[i] + ", ");
+            }
+        }
+
+        // 4
+        for (int i = 0; i <weights.length; i++) {
+            if (weight[i]%2==1){
+                weight[i] ++;
+            }
+            else {
+                System.out.println(weight[i] + ",");
+                System.out.println(0);
+                System.out.println(Arrays.toString(weight));
             }
         }
     }
