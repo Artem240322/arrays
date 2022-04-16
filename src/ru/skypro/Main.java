@@ -3,6 +3,14 @@ package ru.skypro;
 public class Main {
 
     public static void main(String[] args) {
+        int[] weight = new int[3];
+        weight[0] = 1;
+        weight[1] = 2;
+        weight[2] = 3;
+        double[] weight2 = {1.57, 7.654, 9.986};
+        int[] weight3 = {1, 2, 3};
+    }
+    System.out.println();
         int[] weights = new int[] {0, 1, 2, 3};
         for (int i = 0; i < weights.length - 1; i++){
             System.out.print(weights[i] + " ,");
@@ -17,7 +25,7 @@ System.out.println();
     System.out.print(weightsFractional[weightsFractional.length-1]);
 System.out.println();
 //3
-        int[] weightsMassive = new int[] {1, 2, 3};
+        int[] weightsMassive = new int[] {0, 1, 2, 3};
         for (int i = weightsMassive.length -1; i >=0; i--){
             System.out.print(weightsMassive[i] + ",");}
         System.out.print(weightsMassive[0]);
